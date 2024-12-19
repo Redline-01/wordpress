@@ -9,6 +9,14 @@
    }
 
    add_action("wp_enqueue_scripts","add_script");
+
+
+      function ds_menu(){
+         add_theme_support('menus');
+         register_nav_menu('primary', "Primary menu");
+      }
+
+      add_action("init", "ds_menu");
    
 
 
