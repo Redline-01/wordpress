@@ -10,7 +10,7 @@
     wp_head();
 
     ?>
-    s
+    
 
 </head>
 <body>
