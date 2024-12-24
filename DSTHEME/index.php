@@ -12,7 +12,7 @@
 
 ?>
 
-  <h1>Ketu do te vendosen postet</h1>
+  <h1> <?php  the_title(); ?></h1>
 
 <?php
     
