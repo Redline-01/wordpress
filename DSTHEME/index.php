@@ -14,6 +14,7 @@
     get_header();
 
 ?>
+<h1>This is index file</h1>
 
 
 <?php
