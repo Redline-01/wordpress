@@ -17,6 +17,8 @@
       }
 
       add_action("init", "ds_menu");
+
+      add_theme_support("post-thumbnails");
    
 
 
