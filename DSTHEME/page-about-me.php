@@ -29,7 +29,7 @@
 
   <h1> <?php  the_title(); ?></h1>
 
-  <p> <?php the_content(); ?></p>
+  <p> <?php the_content(); the_time(); ?></p>
   <hr>
 
 <?php
