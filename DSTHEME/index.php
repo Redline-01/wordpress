@@ -1,7 +1,7 @@
 
 <?php
 
-   /* Template Name: Test  */
+   /* Template Name: Index  */
 
 
 ?>
