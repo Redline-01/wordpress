@@ -1,6 +1,7 @@
-<?php get_header(); ?>
+<?php
+get_header();
+?>
 
-<h1>This is Home Page</h1>
-
+    <h1>This is home page</h1>
 
 <?php get_footer(); ?>

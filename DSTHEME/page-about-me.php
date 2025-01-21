@@ -1,47 +1,18 @@
-
 <?php
-
-/* 
-    Template Name: About Me 
-
-*/
-
+    /*
+        Template Name: About Me
+    */
+?>
+<?php get_header();?>
+<h1>This Is About Me Template</h1>
+<?php
+if( have_posts() ):
+    while( have_posts() ): the_post();?>
+        <h1><?php the_title(); ?></h1>
+        <p><?php the_content();?></p>
+        <br>
+    <?php endwhile;
+endif;
 ?>
 
-
-
-<?php
-
-    get_header();
-
-?>
-<h1>This is About Me Template</h1>
-
-
-<?php
-
-    if(have_posts() ):
-        while(have_posts()): the_post();
-    
-
-?>
-
-
-  <h1> <?php  the_title(); ?></h1>
-
-  <p> <?php the_content(); the_time(); ?></p>
-  <hr>
-
-<?php
-    
-    endwhile;
-    endif;
-?>
-
-
-
-<?php
-    get_footer();
-
-
-?>
+<?php get_footer(); ?>
