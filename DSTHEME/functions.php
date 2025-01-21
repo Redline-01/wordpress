@@ -21,4 +21,17 @@ add_action("wp_enqueue_scripts","add_script");
 
     add_theme_support("post-thumbnails");
 
+    function ds_theme_init(){
+        register_sidebar(array(
+            "name" => "__(Primary Sidebar, 'DSTHEME')",
+            "id" => "sidebar-1",
+            "before_widget"  => '<aside id= "%1$s" class="widget %2$s" >',
+            "after_widget" => '</aside>',
+            "before_title" => '<h2 class="widget-title">',
+            "after_title" => '</h2>'
+        ));
+    }
+
+    add_action('widgets_init', 'ds_theme_init')
+
 ?>
