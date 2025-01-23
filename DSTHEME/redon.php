@@ -1,17 +1,17 @@
 <?php
     /*
-        Template Name: Portfolio
+        Template Name: Redon
     */
 ?>
 <?php get_header();?>
-<h1>This Is Portfolio Template</h1>
+<h1>This Is Redon Template</h1>
 <?php
 
     $args = [
         "posts_per_page" => 4,
-        // "category_name" => "sports"
-         "category_in" => [3,4]
-       // "cat" => 3
+        "category_in" => [6,7]
+       
+       
     ];
 
     $query = new WP_Query($args);
