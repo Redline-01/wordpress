@@ -9,7 +9,7 @@
 
     $args = [
         "posts_per_page" => 4,
-        "category_in" => [6,7]
+        "cat" => 6,7
        
        
     ];
