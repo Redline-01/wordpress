@@ -21,6 +21,10 @@
      <h2> <?php the_title(); ?> </h2>
      <p> <?php the_content(); ?> </p>
 
+     <div>
+        <?php the_post_thumbnail(array(200,200)); ?> <!-- array(width,height) or 'medium' , 'small'..  -->
+     </div>
+
       </article>
 
 
