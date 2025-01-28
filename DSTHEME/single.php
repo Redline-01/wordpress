@@ -1,6 +1,6 @@
 <?php
  
-  get_haeder();
+  get_header();
 
 ?>
 
@@ -16,7 +16,16 @@
 
       ?>
 
-      
+      <article id="post" <?php the_ID(); ?> class=<?php post_class(); ?> >
+
+     <h2> <?php the_title(); ?> </h2>
+     <p> <?php the_content(); ?> </p>
+
+      </article>
+
+
+
+
 
       <?php
       endwhile;
