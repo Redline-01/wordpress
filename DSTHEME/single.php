@@ -22,7 +22,7 @@
      <p> <?php the_content(); ?> </p>
 
      <div>
-        <?php the_post_thumbnail(array(200,200)); ?> <!-- array(width,height) or 'medium' , 'small'..  -->
+        <?php the_post_thumbnail('medium'); ?> <!-- array(width,height) or 'medium' , 'large'..  -->
      </div>
 
       </article>
