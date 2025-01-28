@@ -27,6 +27,17 @@
 
      <small> <?php the_category(); edit_post_link();  ?> </small>
 
+     
+     <?php
+        if(comments_open()){
+            comments_template();
+        }
+        else{
+            echo "Komentet nuk i kemi te lejuara";     
+        }
+
+      ?>
+
       </article>
 
 
