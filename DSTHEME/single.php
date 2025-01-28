@@ -18,6 +18,12 @@
 
       
 
+      <?php
+      endwhile;
+      endif;
+
+      ?>
+
 
 
 </div>
