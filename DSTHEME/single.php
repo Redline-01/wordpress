@@ -25,6 +25,8 @@
         <?php the_post_thumbnail('medium'); ?> <!-- array(width,height) or 'medium' , 'large'..  -->
      </div>
 
+     <small> <?php the_category(); edit_post_link();  ?> </small>
+
       </article>
 
 
