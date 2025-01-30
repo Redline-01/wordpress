@@ -6,7 +6,7 @@
 
  <div class="row">
 
-  <!-- <?php echo get_search_query(); ?> -->
+  <!-- <?php echo get_search_query(); ?>  shows what we typed in search --> 
 
   <?php
 
