@@ -22,7 +22,7 @@
       
       if(has_post_thumbnail()){ ?>
 
-      <img style="width:200px; height:200px;" src="<?php wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="">
+      <img style="width:200px; height:200px;" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="">
 
       <?php
       } else{
