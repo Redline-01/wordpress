@@ -6,7 +6,7 @@
 
  <div class="row">
 
-   <?php echo get_search_query(); ?> 
+  <!-- <?php echo get_search_query(); ?> -->
 
   <?php
 
@@ -16,6 +16,8 @@
   ?>
   <h1><?php the_title(); ?></h1>
   <p><?php the_content(); ?></p>
+  <hr>
+  <small><?php the_time(); ?> </small>
 
 
 <?php
