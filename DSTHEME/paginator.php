@@ -6,6 +6,9 @@
 
 
    endwhile;
+
+else: 
+endif;
     
 
 ?>
@@ -20,6 +23,9 @@
     <div class="nav-previous alignleft"><?php next_posts_link( 'older posts' );  ?></div>
     <div class="nav-next alignright"><?php previous_posts_link( 'Newer Posts' ) ?></div>
 
-    
+    <?php _e("Sorry no post matched your criteria, try again!");   ?>
+
+
+
 </body>
 </html>
