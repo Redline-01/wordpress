@@ -1,13 +1,20 @@
 <?php
   
-   if(have_post()):
+//    if(have_post()):
 
-    while(have_post()): the_post();
+//     while(have_post()): the_post();
 
 
-   endwhile;
+//    endwhile;
 
-else: 
+// else: 
+// endif;
+
+ if(have_posts()):
+    while( have_posts()) : the_post();
+    the_content();
+    wp_link_pages();
+ endwhile;
 endif;
     
 
@@ -23,7 +30,7 @@ endif;
     <div class="nav-previous alignleft"><?php next_posts_link( 'older posts' );  ?></div>
     <div class="nav-next alignright"><?php previous_posts_link( 'Newer Posts' ) ?></div>
 
-    <?php _e("Sorry no post matched your criteria, try again!")  ?>
+    <?php _e("Sorry no post matched your criteria, try again!");  ?>
 
 
 
