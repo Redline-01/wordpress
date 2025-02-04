@@ -15,7 +15,7 @@
     the_content();
     wp_link_pages();
  endwhile;
-endif;
+endif;             
     
 
 ?>
