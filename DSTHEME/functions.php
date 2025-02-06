@@ -32,7 +32,7 @@ add_action("wp_enqueue_scripts","add_script");
         ));
     }
 
-    add_action('widgets_init', 'ds_theme_init')
+    add_action('widgets_init', 'ds_theme_init');
 
 
     function create_post_type(){
@@ -49,9 +49,13 @@ add_action("wp_enqueue_scripts","add_script");
             'supports' => array('title','editor', 'thumbnail', 'comments')
         )
         
-        )
+        );
 
         
     }
+
+    add_action('init' , 'create_post_type');
+
+    flush_rewrite_rules();
 
 ?>
