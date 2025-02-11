@@ -35,27 +35,40 @@ add_action("wp_enqueue_scripts","add_script");
     add_action('widgets_init', 'ds_theme_init');
 
 
-    function create_post_type(){
-        register_post_type('movies',
-        array(
-            'labels' => array(
-                'name' => __('Movies'),
-                'singular_name' => __('Movie')
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'movies'),
-            'show_in_rest' => true,
-            'supports' => array('title','editor', 'thumbnail', 'comments')
-        )
+    // Metoda e pare
+    // function create_post_type(){
+    //     register_post_type('movies',
+    //     array(
+    //         'labels' => array(
+    //             'name' => __('Movies'),
+    //             'singular_name' => __('Movie')
+    //         ),
+    //         'public' => true,
+    //         'has_archive' => true,
+    //         'rewrite' => array('slug' => 'movies'),
+    //         'show_in_rest' => true,
+    //         'supports' => array('title','editor', 'thumbnail', 'comments')
+    //     )
         
-        );
+    //     );
 
         
+    // }
+
+    // add_action('init' , 'create_post_type');
+
+    // flush_rewrite_rules();
+
+    function create_post_type2(){
+        $labels = array{
+            'name' => _x('Movies', 'post type general name'),
+            'singular_name' => _x('Movie', 'post type singular name'),
+            'add_new' => __('Add New'),
+            'add_new_item' => __('Add New Movie'),
+            'edit_item' => __('Edit Movie'),
+            'new_item' => __('New Movie'),
+            ''
+        }
     }
-
-    add_action('init' , 'create_post_type');
-
-    flush_rewrite_rules();
 
 ?>
