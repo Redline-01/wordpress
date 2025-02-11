@@ -93,4 +93,27 @@ add_action("wp_enqueue_scripts","add_script");
 
     flush_rewrite_rules();
 
+
+    function movies_taxonomy(){
+        $args = [
+            'labels' => array(
+                'name' => ('Movie Genres'),
+                'singular_name' => ('Movie Genre'),
+                'add_new_item' => ('Add new movie genre'),
+                'edit_name' => ('Edit Movie Genres')
+
+            ),
+
+            'public' => true,
+            'hierarchical' => true
+        ];
+
+        register_taxonomy(
+            'type', array('movie'), $args
+        );
+    }
+
+    add_action('init', 'movies_taxonomy');
+    
+
 ?>
