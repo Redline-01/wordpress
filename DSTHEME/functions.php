@@ -67,7 +67,13 @@ add_action("wp_enqueue_scripts","add_script");
             'add_new_item' => __('Add New Movie'),
             'edit_item' => __('Edit Movie'),
             'new_item' => __('New Movie'),
-            ''
+            'all_item' => __('All Movies'),
+            'view_item' => __('View Movie'),
+            'search_items' => __('Search Movies'),
+            'not_found' => __('No movies found'),
+            'not_found_in_trash' => __('No movies found in the trash'),
+            'parent_item_colon' => '',
+            'menu_name' => 'Movies'
         }
     }
 
