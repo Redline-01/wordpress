@@ -74,7 +74,17 @@ add_action("wp_enqueue_scripts","add_script");
             'not_found_in_trash' => __('No movies found in the trash'),
             'parent_item_colon' => '',
             'menu_name' => 'Movies'
-        }
+        };
+
+        $args = array(
+            'labels' => $labels,
+            'description' => 'Movie details',
+            'public' => true,
+            'menu_position' => 5,
+            'supports' => array('title', 'editor', 'thumbnail', 'comments'),
+            'has_archive' => true
+
+        );
     }
 
 ?>
