@@ -85,6 +85,12 @@ add_action("wp_enqueue_scripts","add_script");
             'has_archive' => true
 
         );
+        
+        register_post_type('movie', $args);
     }
+
+    add_action('init', 'create_post_type2');
+
+    flush_rewrite_rules();
 
 ?>
