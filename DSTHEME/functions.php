@@ -60,7 +60,7 @@ add_action("wp_enqueue_scripts","add_script");
     // flush_rewrite_rules();
 
     function create_post_type2(){
-        $labels = array{
+        $labels = array(
             'name' => _x('Movies', 'post type general name'),
             'singular_name' => _x('Movie', 'post type singular name'),
             'add_new' => __('Add New'),
@@ -74,7 +74,7 @@ add_action("wp_enqueue_scripts","add_script");
             'not_found_in_trash' => __('No movies found in the trash'),
             'parent_item_colon' => '',
             'menu_name' => 'Movies'
-        };
+        );
 
         $args = array(
             'labels' => $labels,
